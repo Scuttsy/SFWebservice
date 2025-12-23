@@ -1,0 +1,29 @@
+@SFWebservice_HostAddress = https://localhost:7059
+
+
+GET {{SFWebservice_HostAddress}}/api/gamesession
+
+###
+
+POST {{SFWebservice_HostAddress}}/api/gamesession
+Content-Type: application/json
+
+"string"
+
+###
+
+@id=0
+DELETE {{SFWebservice_HostAddress}}/api/gamesession/{{id}}
+
+###
+
+GET {{SFWebservice_HostAddress}}/api/gamesession/{{id}}
+
+###
+
+PUT {{SFWebservice_HostAddress}}/api/gamesession/{{id}}
+Content-Type: application/json
+
+"string"
+
+###
