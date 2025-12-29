@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\modules\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\modules\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\controllers\\playerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\controllers\\gamesessionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\sfdb01context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\sfdb01context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|c:\\users\\samuel\\documents\\github\\gw\\sfwebservice\\sfwebservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F16FC3B3-1B32-4BA0-B608-9AAAE7CA1F40}|SFWebservice\\SFWebservice.csproj|solutionrelative:sfwebservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,42 +46,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PlayersController.cs",
               "DocumentMoniker": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Controllers\\PlayersController.cs",
               "RelativeDocumentMoniker": "SFWebservice\\Controllers\\PlayersController.cs",
               "ToolTip": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Controllers\\PlayersController.cs",
               "RelativeToolTip": "SFWebservice\\Controllers\\PlayersController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowFkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T16:04:10.163Z",
+              "WhenOpened": "2025-12-23T01:04:00.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Program.cs",
+              "RelativeDocumentMoniker": "SFWebservice\\Program.cs",
+              "ToolTip": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Program.cs",
+              "RelativeToolTip": "SFWebservice\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-22T14:48:16.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "SFWebservice\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Properties\\launchSettings.json",
-              "RelativeToolTip": "SFWebservice\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-22T14:53:50.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\appsettings.json",
               "RelativeDocumentMoniker": "SFWebservice\\appsettings.json",
               "ToolTip": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\appsettings.json",
               "RelativeToolTip": "SFWebservice\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-22T14:53:48.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-23T01:48:36.233Z"
             },
             {
               "$type": "Document",
@@ -101,21 +91,7 @@
               "RelativeToolTip": "SFWebservice\\Sfdb01Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T15:33:49.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Program.cs",
-              "RelativeDocumentMoniker": "SFWebservice\\Program.cs",
-              "ToolTip": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Program.cs",
-              "RelativeToolTip": "SFWebservice\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwCgAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T14:48:16.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-22T15:33:49.537Z"
             },
             {
               "$type": "Document",
@@ -125,23 +101,19 @@
               "RelativeDocumentMoniker": "SFWebservice\\Controllers\\GameSessionsController.cs",
               "ToolTip": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Controllers\\GameSessionsController.cs",
               "RelativeToolTip": "SFWebservice\\Controllers\\GameSessionsController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAgwE8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwD0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T16:01:23.482Z",
-              "EditorCaption": ""
-            },
+              "WhenOpened": "2025-12-22T16:01:23.482Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 148,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Modules\\Player.cs",
-              "RelativeDocumentMoniker": "SFWebservice\\Modules\\Player.cs",
-              "ToolTip": "C:\\Users\\Samuel\\Documents\\GitHub\\GW\\SFWebservice\\SFWebservice\\Modules\\Player.cs",
-              "RelativeToolTip": "SFWebservice\\Modules\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T16:06:17.504Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
             }
           ]
         }
