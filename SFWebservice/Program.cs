@@ -15,10 +15,13 @@ namespace SFWebservice
 
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAllOrigins",
-                    builder => builder.AllowAnyOrigin()
-                                      .AllowAnyMethod()
-                                      .AllowAnyHeader());
+                options.AddDefaultPolicy(policy =>
+                {
+                    policy
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                });
             });
 
             builder.Services.AddControllers();
@@ -51,11 +54,28 @@ namespace SFWebservice
                 app.UseSwaggerUI();
             }
 
-            app.MapGet("/", () => "Hello world!");
+            app.MapMethods("/_options-test", new[] { "OPTIONS" }, () =>
+            {
+                return Results.Ok("OPTIONS reached ASP.NET");
+            });
 
+
+            app.UseRouting();
+            app.UseCors();
             app.UseAuthorization();
+
+            app.Use(async (context, next) =>
+            {
+                if (context.Request.Method == HttpMethods.Options)
+                {
+                    context.Response.StatusCode = StatusCodes.Status200OK;
+                    return;
+                }
+
+                await next();
+            });
+
             app.MapControllers();
-            app.UseCors("AllowAllOrigins");
             app.Run();
 
         }

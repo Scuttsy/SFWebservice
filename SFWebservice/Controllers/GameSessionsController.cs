@@ -12,7 +12,7 @@ using SFWebservice.Modules;
 namespace SFWebservice.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("AllowAllOrigins")]
+    [EnableCors()]
     [ApiController]
     public class GameSessionsController : ControllerBase
     {
@@ -25,9 +25,10 @@ namespace SFWebservice.Controllers
 
         // GET: api/GameSessions
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GameSession>>> GetGameSessions()
+        public IEnumerable<GameSession> GetGameSessions()
         {
-            return await _context.GameSessions.ToListAsync();
+            List<GameSession> result = _context.GameSessions.ToList();
+            return result ?? new List<GameSession>();
         }   
 
         // GET: api/GameSessions/5
@@ -76,14 +77,44 @@ namespace SFWebservice.Controllers
         }
 
         // POST: api/GameSessions
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754S
         [HttpPost]
-        public async Task<ActionResult<GameSession>> PostGameSession(GameSession gameSession)
+        public PlayerData PostGameSession([FromBody] PlayerData playerData)
         {
-            _context.GameSessions.Add(gameSession);
-            await _context.SaveChangesAsync();
+            if (playerData.Sessions == null) return new PlayerData();
 
-            return CreatedAtAction("GetGameSession", new { id = gameSession.SessionId }, gameSession);
+            GameSession newGameSesion;
+            List<GameSession> newSessions = new List<GameSession>();
+
+            foreach (GameSession session in playerData.Sessions)
+                if (!_context.GameSessions.Any(e => e.SessionId == session.SessionId))
+                {
+                    newGameSesion = new GameSession()
+                    {
+                        StartTime = session.StartTime,
+                        PlayerId = playerData.ID,
+                        EndTime = session.EndTime,
+                        FeedbackType = session.FeedbackType
+                    };
+
+                    _context.Add(newGameSesion);
+                    _context.SaveChanges();
+
+                    newSessions.Add(newGameSesion);
+                }
+                else
+                {
+                    newGameSesion = _context.GameSessions.Where(e => e.SessionId == session.SessionId).First();
+                    newGameSesion.EndTime = session.EndTime;
+
+                    _context.Update(newGameSesion);
+                    _context.SaveChanges();
+
+                    newSessions.Add(newGameSesion);
+                }
+
+            playerData.Sessions = newSessions;
+            return playerData;
         }
 
         // DELETE: api/GameSessions/5

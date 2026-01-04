@@ -12,7 +12,7 @@ using SFWebservice.Modules;
 namespace SFWebservice.Controllers
 {
     [Route("api/[controller]")]
-    [EnableCors("AllowAllOrigins")]
+    [EnableCors()]
     [ApiController]
     public class PlayersController : ControllerBase
     {
@@ -78,17 +78,22 @@ namespace SFWebservice.Controllers
         // POST: api/Players
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Player>> PostPlayer()
+        public PlayerData PostPlayer([FromBody] PlayerData playerData)
         {
             Player newPlayer = new Player()
             {
-                CreationDate = DateTime.UtcNow
+                CreationDate = playerData.Player.CreationDate
             };
-            _context.Players.Add(newPlayer);
-            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPlayer", new { id = newPlayer.PlayerId }, newPlayer);
+            _context.Players.Add(newPlayer);
+             
+            _context.SaveChanges();
+
+            playerData.Player = newPlayer;
+
+            return playerData;
         }
+
 
         // DELETE: api/Players/5
         [HttpDelete("{id}")]
