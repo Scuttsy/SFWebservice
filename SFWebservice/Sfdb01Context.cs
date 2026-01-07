@@ -73,9 +73,6 @@ public partial class Sfdb01Context : DbContext
             entity.Property(e => e.EntityHitId).HasColumnName("EntityHitID");
             entity.Property(e => e.GameSessionId).HasColumnName("GameSessionID");
 
-            entity.HasOne(d => d.EntityHit).WithMany(p => p.Hits)
-                .HasForeignKey(d => d.EntityHitId)
-                .HasConstraintName("FK_Hit_Entity");
 
             entity.HasOne(d => d.GameSession).WithMany(p => p.Hits)
                 .HasForeignKey(d => d.GameSessionId)
